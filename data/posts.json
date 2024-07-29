@@ -1,0 +1,62 @@
+[
+  {
+    "title": "MUSHROOM",
+    "content": "Dignissim placerat viverra iaculis lacus netus.",
+    "image": "images/post1.png"
+  },
+  {
+    "title": "SNAKE",
+    "content": "Sit proin faucibus in enim, amet pretium ac nunc. Ullamcorper molestie ut facilisis sed.",
+    "image": "images/post2.png"
+  },
+  {
+    "title": "WEIRD FROG",
+    "content": "Vehicula euismod mauris pharetra aliquam amet, et quam enim viverra.",
+    "image": "images/post3.png"
+  },
+  {
+    "title": "JELLYFISH",
+    "content": "Amet lorem metus, in diam.",
+    "image": "images/post4.png"
+  },
+  {
+    "title": "SPIDER",
+    "content": "Quisque id vel in vel tellus. Arcu orci pharetra ut magna tristique lacus sapien, purus.",
+    "image": "images/post5.png"
+  },
+  {
+    "title": "BIG SPIDER",
+    "content": "Ut felis, in vestibulum fames nunc libero, laoreet neque.",
+    "image": "images/post6.png"
+  },
+  {
+    "title": "SCORPION",
+    "content": "Augue pharetra gravida congue quisque vestibulum dictumst eget leo magna.",
+    "image": "images/post7.png"
+  },
+  {
+    "title": "DEATH KISS",
+    "content": "Ut amet lacus fringilla nibh ac non lobortis tempor. Magna turpis nulla quis tempor tellus, ipsum.",
+    "image": "images/post8.png"
+  },
+  {
+    "title": "WEIRD CULT",
+    "content": "Et, dictumst convallis nulla nisi fames adipiscing bibendum viverra.",
+    "image": "images/post9.png"
+  },
+  {
+    "title": "SOME HERB",
+    "content": "Sagittis, purus nunc, mattis proin sodales netus venenatis elementum non.",
+    "image": "images/post10.png"
+  },
+  {
+    "title": "LION BITE",
+    "content": "Vivamus ut scelerisque eu, risus id varius at turpis. Vitae pellentesque nunc, eu, sed donec integer.",
+    "image": "images/post11.png"
+  },
+  {
+    "title": "RABIES",
+    "content": "Ut ullamcorper amet, cursus integer nibh felis velit mi.",
+    "image": "images/post12.png"
+  }
+]

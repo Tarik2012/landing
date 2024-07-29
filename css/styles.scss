@@ -1,0 +1,297 @@
+// Variables
+$primary-color: #003d4c;
+$secondary-color: #ff6666;
+$background-color: #f4f4f4;
+$text-color: #666666;
+$header-footer-bg: $primary-color;
+$header-footer-text: #ffffff;
+$button: #e6e0e0;
+
+// Estilos generales
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+}
+
+header {
+  background-color: $header-footer-bg;
+  padding: 20px;
+  text-align: center;
+
+  .logo {
+    color: $header-footer-text;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-color;
+  color: $header-footer-text;
+  padding: 70px;
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+
+    h1 {
+      font-size: 100px; // Ajuste para hacer el texto más grande
+      font-weight: bold;
+
+      span {
+        color: $secondary-color;
+        font-size: 80px; // Ajuste para hacer el texto del span más grande
+      }
+    }
+
+    p {
+      font-size: 25px;
+    }
+
+    button {
+      background-color: $button;
+      border: none;
+      padding: 10px 20px;
+      color: $header-footer-text;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .drink-button {
+      color: black;
+    }
+  }
+
+  .hero-image {
+    margin-top: 20px;
+    margin-left: 80px;
+
+    img {
+      max-width: 70%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+
+    .hero-content {
+      max-width: 50%;
+      text-align: left;
+
+      h1 {
+        font-size: 80px; // Ajuste para hacer el texto más grande en pantallas grandes
+      }
+
+      span {
+        font-size: 90px; // Ajuste para hacer el texto del span más grande
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .hero-image {
+      margin-top: 0;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+#mid-section {
+  background-color: #ffffff;
+  padding: 50px;
+  text-align: center;
+
+  h2 {
+    font-size: 24px;
+    color: $primary-color;
+
+    span {
+      color: $secondary-color;
+    }
+  }
+
+  p {
+    color: $text-color;
+    font-size: 16px;
+  }
+
+  .mid-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    h3 {
+      font-size: 18px;
+      color: $primary-color;
+    }
+
+    p {
+      font-size: 14px;
+      color: $text-color;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    img {
+      max-width: 80%;
+      margin-top: 20px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 36px;
+    }
+
+    .mid-content {
+      flex-direction: row;
+      align-items: flex-start;
+
+      h3 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+        max-width: 60%;
+        text-align: left;
+      }
+
+      img {
+        max-width: 35%;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+#flavors {
+  background-color: #ffe6e6;
+  padding: 50px;
+  text-align: center;
+
+  h2 {
+    font-size: 24px;
+    color: $primary-color;
+  }
+
+  .post-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .flavor-card {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    width: calc(50% - 20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    h3 {
+      font-size: 16px;
+      color: $primary-color;
+      margin: 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    p {
+      font-size: 12px;
+      color: $text-color;
+      margin: 10px 0;
+    }
+
+    button {
+      background-color: $secondary-color;
+      border: none;
+      padding: 5px 10px;
+      color: #ffffff;
+      font-size: 12px;
+      cursor: pointer;
+    }
+  }
+
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 36px;
+    }
+
+    .flavor-card {
+      width: calc(25% - 20px);
+    }
+  }
+
+  @media (max-width: 767px) {
+    .flavor-card {
+      width: calc(50% - 20px);
+    }
+  }
+
+  #load-more {
+    background-color: $secondary-color;
+    border: none;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+}
+
+footer {
+  background-color: $header-footer-bg;
+  color: $header-footer-text;
+  padding: 20px;
+  text-align: center;
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .footer-logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 0;
+      }
+    }
+
+    .footer-info {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,251 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #003d4c;
+  padding: 20px;
+  text-align: center;
+}
+header .logo {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #003d4c;
+  color: #ffffff;
+  padding: 70px;
+}
+#hero .hero-content {
+  max-width: 100%;
+  text-align: center;
+}
+#hero .hero-content h1 {
+  font-size: 100px;
+  font-weight: bold;
+}
+#hero .hero-content h1 span {
+  color: #ff6666;
+  font-size: 80px;
+}
+#hero .hero-content p {
+  font-size: 25px;
+}
+#hero .hero-content button {
+  background-color: #e6e0e0;
+  border: none;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+#hero .hero-content .drink-button {
+  color: black;
+}
+#hero .hero-image {
+  margin-top: 20px;
+  margin-left: 80px;
+}
+#hero .hero-image img {
+  max-width: 70%;
+}
+@media (min-width: 768px) {
+  #hero {
+    flex-direction: row;
+  }
+  #hero .hero-content {
+    max-width: 50%;
+    text-align: left;
+  }
+  #hero .hero-content h1 {
+    font-size: 80px;
+  }
+  #hero .hero-content span {
+    font-size: 90px;
+  }
+  #hero .hero-content p {
+    font-size: 18px;
+  }
+  #hero .hero-image {
+    margin-top: 0;
+  }
+  #hero .hero-image img {
+    max-width: 100%;
+  }
+}
+
+#mid-section {
+  background-color: #ffffff;
+  padding: 50px;
+  text-align: center;
+}
+#mid-section h2 {
+  font-size: 24px;
+  color: #003d4c;
+}
+#mid-section h2 span {
+  color: #ff6666;
+}
+#mid-section p {
+  color: #666666;
+  font-size: 16px;
+}
+#mid-section .mid-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+#mid-section .mid-content h3 {
+  font-size: 18px;
+  color: #003d4c;
+}
+#mid-section .mid-content p {
+  font-size: 14px;
+  color: #666666;
+  max-width: 100%;
+  text-align: center;
+}
+#mid-section .mid-content img {
+  max-width: 80%;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  #mid-section h2 {
+    font-size: 36px;
+  }
+  #mid-section .mid-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #mid-section .mid-content h3 {
+    font-size: 24px;
+  }
+  #mid-section .mid-content p {
+    font-size: 16px;
+    max-width: 60%;
+    text-align: left;
+  }
+  #mid-section .mid-content img {
+    max-width: 35%;
+    margin-top: 0;
+  }
+}
+
+#flavors {
+  background-color: #ffe6e6;
+  padding: 50px;
+  text-align: center;
+}
+#flavors h2 {
+  font-size: 24px;
+  color: #003d4c;
+}
+#flavors .post-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#flavors .flavor-card {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  width: calc(50% - 20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+#flavors .flavor-card img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+#flavors .flavor-card h3 {
+  font-size: 16px;
+  color: #003d4c;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+#flavors .flavor-card p {
+  font-size: 12px;
+  color: #666666;
+  margin: 10px 0;
+}
+#flavors .flavor-card button {
+  background-color: #ff6666;
+  border: none;
+  padding: 5px 10px;
+  color: #ffffff;
+  font-size: 12px;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  #flavors h2 {
+    font-size: 36px;
+  }
+  #flavors .flavor-card {
+    width: calc(25% - 20px);
+  }
+}
+@media (max-width: 767px) {
+  #flavors .flavor-card {
+    width: calc(50% - 20px);
+  }
+}
+#flavors #load-more {
+  background-color: #ff6666;
+  border: none;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #003d4c;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  footer .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+footer .footer-content .footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  footer .footer-content .footer-logo {
+    margin-bottom: 0;
+  }
+}
+footer .footer-content .footer-info {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=styles.css.map */
